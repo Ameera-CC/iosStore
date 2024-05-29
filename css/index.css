@@ -1,0 +1,384 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding: 160px 0 0 0; 
+    margin:0 0 0 0;
+}
+
+.header-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; 
+    z-index: 1000; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.logo-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo-img {
+    margin-top: 10px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #013b3ec2;    
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgba(107, 224, 181, 0.637);
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 40px 20px 0px 20px;
+}
+
+nav{
+    background-color: #022527;
+}
+nav ul li {
+    margin: 20px 20px 0px 20px;
+    font-size: 16px;
+}
+
+nav ul{
+    text-align: center;
+    /* border: 1px solid grey; */
+    padding: 0 0 20px 0;
+
+}
+
+nav ul li a {
+    color: #93daca;
+
+}
+
+.container-fluid{
+    margin: 0 0 0 0;
+    padding: 0;
+}
+.carousel-inner,.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    position: static;
+}
+
+.carousel-indicators li {
+    position: relative;
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    background-color: #bfd7d8;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #045e63;
+}
+
+.phone-item{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.phone-item:hover{
+    box-shadow: 0 0 30px rgba(10, 100, 94, 0.863);
+    transform: scale(1.1);
+
+}
+.sub-phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 50px; 
+    margin: 50px 30px 50px 30px; 
+
+}
+
+.phone-item img {
+    /* max-width: 100%; */
+    height: 150px;
+    display: block;
+}
+
+.sub-hover{
+    position: fixed;
+    top: 25%;
+    left: 0;
+    right: 0;
+    background-color: #bfd7d8;
+    /* background-color: #bfd7d8c6; */
+    display: none;
+    max-height: calc(100vh - 120px); 
+    overflow-y: auto; 
+}
+.maxcare-slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 10% 2% 10%;
+    background-color: #bfd7d8;
+    padding: 10px;
+    color: #045e63;
+    border-radius: 10px;
+    border: 2px solid #045e63;
+}
+
+.maxcare-slogan img{
+    background-color: #dde3e6fe;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(32, 144, 121, 0.986); 
+
+
+}
+
+.maxcare-slogan p{
+    font-size: 14px;
+    color: #045e63;
+}
+
+.maxcare-slogan span{
+    color: #045e63;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+
+.services-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: 30px;
+}
+
+.service-item {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.service-item img{
+    height:400px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.service-item button{
+    margin-top: 20px;
+    padding: 10px 40px 10px 40px;
+    border: 2px solid #045e63;
+    border-radius: 20px;
+    background-color: #bfd7d8;
+    color: #045e63;
+    transition: transform 0.2s ease, background-color 0.1s ease , color 0.1s ease ;
+
+}
+
+.service-item button:hover{
+    border: 2px solid #bfd7d8;
+    background-color: #045e63;
+    color:#bfd7d8 ;
+    transform: scale(1.1);
+
+}
+
+.service-item img:hover {
+    margin: 0px 0px 10px 0px;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(3, 140, 140, 0.865);
+}
+
+
+.footer-area{
+    
+    background-color: #022527;
+    /* height: 500px; */
+    padding: 5% 10% 1% 10%;
+    color: #93daca;
+}
+
+.footer-area h3{
+    color: rgb(247, 247, 247);
+}
+.connect-us{
+   
+    display: flex;
+    justify-content: space-around;
+}
+
+.connect-us input{
+    border: none;
+    width: 400px;
+    padding: 10px 20px 10px 20px;
+}
+
+.connect-us button{
+    border: 2px solid #045e63;
+    padding: 10px 20px 10px 20px;
+    background-color: #bfd7d8;
+    color: #045e63;
+
+}
+
+.connect-us button:hover{
+    border: 2px solid #bfd7d8;
+    background-color: #045e63;
+    color:#bfd7d8 ;
+    transform: scale(1.1);
+
+}
+
+
+.more-details{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+
+}
+
+.more-details ul li{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.footer-icons{
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons i {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.payment-mode i{
+    background-color: #93daca;
+    color: #022527;
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    /* width: 60px; */
+}
+
+.copy-right{
+    margin: 30px 0 0 0;
+    font-size: 12px;
+    text-align: center;
+
+    /* color: #93daca; */
+
+}
+/* Animation Styles */
+
+/* animation for Maxcare slogan */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.maxcare-slogan img,
+.maxcare-slogan h4,
+.maxcare-slogan h4 span,
+.maxcare-slogan h4 p {
+    opacity: 1;
+    animation: fadeInUp 3s infinite;
+}
+
+.maxcare-slogan img {
+    animation-delay: 1s;
+}
+
+.maxcare-slogan h4 {
+    animation-delay: 1s;
+}
+
+.maxcare-slogan h4 span {
+    animation-delay: 1s;
+}
+
+.maxcare-slogan h4 p {
+    animation-delay: 2s;
+}
+
+
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 5px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:#022527;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(107, 224, 181, 0.637); 
+    border-radius: 50px;
+
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(107, 224, 181, 0.637); 
+}
+
+
+body.no-scroll {
+    overflow: hidden;
+}
+

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>istore</title>
+    <script src="https://kit.fontawesome.com/848f8b6cbf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/iphone13.css">
+</head>
+<body>
+
+    <!-- Logo Header area -->
+
+    <div class="header-div">
+
+        <div class="logo-header">
+                <ul>
+                    <li><a href="">Qatar</a></li>
+                    <li><a href="">Arabic</a></li>
+                </ul>
+
+                <!-- <img src="./images/logonew.png" height="80" width="200" alt="log__err" class="logo-img"> -->
+
+
+                <ul>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Cart</a></li>
+                    
+                </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="" class="iphone-nav">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">Airpod</a></li>
+                <li><a href="">TV</a></li>
+                <li><a href="">Audio</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">special deals</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Solutions</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- Main Body area-->
+
+    <div class="container-fluid main-page">
+
+        <div class="selected-item-head">
+            <a href="./index.html"><p>Home</p> </a>
+            <span>&gt;</span>
+            <a href=""><p>iPhone</p> </a>
+            <span>&gt;</span> 
+            <a href=""><p>iPhone 13</p> </a>
+
+        </div>
+
+        <div class="main-content">
+
+            <div class="filter-sort">
+
+                <div class="filter">
+
+                    <h4>Filter</h4>
+    
+                    <div class="filter-item">
+                        <div class="filter-head">
+                            <h6>Price Range</h6>
+                            <span class="toggle-icon" id="toggle-icon">+</span>
+    
+                        </div>
+                        
+                        <div id="price-range" class="hidden">
+                            <input type="text" id="min-price" readonly>
+                            <input type="text" id="max-price" readonly>
+                        </div>
+                    </div>
+    
+                    <div class="filter-item">
+                        <div class="filter-head">
+                            <h6>Product Type</h6>
+                            <span class="toggle-icon" id="toggle-icon">+</span>
+                        </div>
+                        
+                        <div id="product-type" class="hidden" >
+                            <label>
+                                <input type="checkbox" class="product-filter" id="filter-iphone13" value="iPhone 13">
+                                iPhone 13
+                            </label>
+                            <label>
+                                <input type="checkbox" class="product-filter" id="filter-iphone13pro" value="iPhone 13 Pro">
+                                iPhone 13 Pro
+                            </label>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="filter-item">
+                        <div class="filter-head">
+                            <h6>Product Color</h6>
+                            <span class="toggle-icon" id="toggle-icon">+</span>
+                        </div>
+                        
+                        <div id="product-color" class="hidden">
+                            <label>
+                                <input type="checkbox" class="color-filter" >
+                                Black
+                            </label>
+                            <label>
+                                <input type="checkbox" class="color-filter">
+                                White
+                            </label>
+                            <label>
+                                <input type="checkbox" class="color-filter" >
+                                Red
+                            </label>
+                            <label>
+                                <input type="checkbox" class="color-filter">
+                                Pink
+                            </label>
+                            <label>
+                                <input type="checkbox" class="color-filter" >
+                                Green
+                            </label>
+                            <label>
+                                <input type="checkbox" class="color-filter">
+                                Blue
+                            </label>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+    
+                <div class="sort">
+                        <h4>Sort By :</h4>   
+                        <div class="sort-dropdown">
+                            <select id="sort-dropdown">
+                                <option value="position">position</option>
+                                <option value="name">Name</option>
+                                <option value="price">Price</option>
+                            </select>
+                        </div>
+                </div>
+
+
+            </div>
+
+            
+            <div class="product">
+
+                <div class="product-item" data-type="iPhone 13 Pro" >
+                    <img id="product-image-1" src="./images/iPhone13/iphone13pro_black.webp" height="300" width="300" alt="">
+                    <h5>iPhone 13 Pro</h5>
+                    <p>QAR 3920/-</p>
+                    <div class="color-selection">
+                        <div id="black" class="color black selected" title="Black Titanium" data-image="product-image-1" data-color="black"></div>
+                        <div id="white" class="color white" title="Beige Titanium" data-image="product-image-1" data-color="white"></div>
+                        <div id="blue" class="color blue" title="Blue Titanium" data-image="product-image-1" data-color="blue">    
+                        </div>
+                        <div id="green" class="color green" title="Green Titanium" data-image="product-image-1" data-color="green"  ></div>
+                    </div>
+                    <button>Buy Now</button>
+
+                </div>
+
+                <div class="product-item" data-type="iPhone 13">
+                    <img id="product-image-2" src="./images/iPhone13/iphone13_black.webp" height="300" width="300" alt="">
+                    <h5>iPhone 13 </h5>
+                    <p>QAR 5190/-</p>
+                    <div class="color-selection">
+                        <div id="black" class="color black selected" title="Black Titanium" data-image="product-image-2" data-color="black"></div>
+                        <div id="white" class="color white" title="Beige Titanium" data-image="product-image-2" data-color="white"></div>
+                        <div id="pink" class="color pink" title="Pink Titanium" data-image="product-image-2" data-color="pink"></div>
+                        <div id="red" class="color red" title="Red Titanium" data-image="product-image-2" data-color="red"></div>
+                        <div id="green" class="color green" title="Green Titanium" data-image="product-image-2" data-color="green"></div>
+                    </div>
+                    <button>Buy Now</button>
+
+                </div>
+
+                <div class="product-item" data-type="iPhone 13 Pro">
+                    <img id="product-image-3" src="./images/iPhone13/iphone13pro_black.webp" height="300" width="300" alt="">
+                    <h5>iPhone 13 Pro</h5>
+                    <p>QAR 4920/-</p>
+                    <div class="color-selection">
+                        <div id="black" class="color black selected" title="Black Titanium" data-image="product-image-3" data-color="black"></div>
+                        <div id="white" class="color white" title="Beige Titanium" data-image="product-image-3" data-color="white"></div>
+                        <div id="blue" class="color blue" title="Blue Titanium" data-image="product-image-3" data-color="blue">    
+                        </div>
+                        <div id="green" class="color green" title="Green Titanium" data-image="product-image-3" data-color="green"  ></div>
+                    </div>
+                    <button>Buy Now</button>
+
+                </div>
+
+                <div class="product-item" data-type="iPhone 13">
+                    <img id="product-image-4" src="./images/iPhone13/iphone13_black.webp" height="300" width="300" alt="">
+                    <h5>iPhone 13 </h5>
+                    <p>QAR 1890/-</p>
+                    <div class="color-selection">
+                        <div id="black" class="color black selected" title="Black Titanium" data-image="product-image-4" data-color="black"></div>
+                        <div id="white" class="color white" title="Beige Titanium" data-image="product-image-4" data-color="white"></div>
+                        <div id="pink" class="color pink" title="Pink Titanium" data-image="product-image-4" data-color="pink"></div>
+                        <div id="red" class="color red" title="Red Titanium" data-image="product-image-4" data-color="red"></div>
+                        <div id="green" class="color green" title="Green Titanium" data-image="product-image-4" data-color="green"></div>
+                    </div>
+                    <button>Buy Now</button>
+
+                </div>
+
+              
+            </div>
+
+
+        </div>
+
+
+
+
+
+    <!-- footer area  -->
+
+        <div class="footer-area">
+            <div class="connect-us">
+                <div>
+                    <h3>Stay in touch</h3>
+                    <p>Be the first to know about novelties and offers.</p>
+                </div>
+                <div>
+                    <input type="email" placeholder="emil adress">
+                    <button>Go!</button>
+                </div>
+            </div>
+            <div class="more-details">
+                <ul>
+                    <li><h3>About Us</h3></li>
+                    <li>Stores</li>
+                    <li>Brands</li>
+                    <li>Education Programs</li>
+
+                </ul>
+
+                <ul>
+                    <li><h3>Help Center</h3></li>
+                    <li>FAQ</li>
+                    <li>Contact Us</li>
+                    <li>Apple Authorized Service Provider</li>
+
+                </ul>
+
+                <ul>
+                    <li><h3>Services</h3></li>
+                    <li>Installment Plan</li>
+                    <li>Trade in Calculator</li>
+                    <li>Personal Setup</li>
+                    <li>Demo sessions and workshop</li>
+                    <li>MaxCare</li>
+
+
+                </ul>
+
+                <ul>
+                    <li><h3>Legal</h3></li>
+                    <li>Shippings and Delivery</li>
+                    <li>Returns and Replacement</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy and Policy</li>
+
+
+                </ul>
+
+
+            </div>
+            <div class="footer-icons">
+
+                <div class="social-media">
+                    <i class="fa-brands fa-square-facebook"></i>                
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>    
+                </div>
+
+                <div class="payment-mode">
+                    <i class="fa-brands fa-apple-pay"></i>                    
+                    <i class="fa-brands fa-cc-visa"></i>                    
+                    <i class="fa-brands fa-cc-mastercard"></i>                
+                </div>
+
+
+            </div>
+            <div class="copy-right">
+                <p>Copyright 2024 Gait © Part of Unknown Technology Group.</p>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- Nav bar hover result div -->
+    <div class="sub-hover">
+        <div class="sub-phones" id="subPhone">
+
+            <div class="phone-item">
+                <img src="./images/PhoneHover/iPhone_13_Pro.webp" alt="">
+                <a href=""><p>iPhone 13</p></a>  
+            </div>
+            <div class="phone-item">
+                <img src="./images/PhoneHover/iPhone_14.webp" alt="">
+                <a href=""><p>iPhone 14</p></a>
+            </div>
+            <div class="phone-item">
+                <img src="./images/PhoneHover/Sept-iPhone15.jpg" alt="">
+                <a href=""><p>iPhone 15</p></a>
+            </div>
+            <div class="phone-item">
+                <img src="./images/PhoneHover/Sept-iPhone15Plus.jpg" alt="">
+                <a href=""><p>iPhone 15 Plus</p></a>
+            </div>
+            <div class="phone-item">
+                <img src="./images/PhoneHover/Sept-iPhone15Pro.jpg" alt="">
+                <a href=""><p>iPhone 15 Pro</p></a>
+            </div>
+            <div class="phone-item">
+                <img src="./images/PhoneHover/iPhone_14.webp" alt="">
+                <a href=""><p>iPhone 14</p></a>
+    
+            </div>
+           
+            <div class="phone-item">
+                <img src="./images/PhoneHover/iPhone_13_Pro.webp" alt="">
+                <a href=""><p>iPhone 13</p></a>
+            </div>           
+    
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>    
+    <script src="./scripts/iphone13.js"></script>
+
+</body>
+</html>
+
